@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    /* Colors */
+    --primary-color: #F4D35E;
+    --white: #E8EEF2;
+    --black: #000;
+    --gray: #343535;
+    --light-gray: #cacaca;
+    /* Fonts */
+    --primary-font: 'Poppins', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: var(--white);
+    font-family: var(--primary-font);
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100dvh - 8rem);
+    margin: 4rem 0;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    width: 300px;
+    padding: 2rem;
+    border-radius: 16px;
+    background-color: var(--gray);
+    color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.profile-card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .7rem;
+}
+
+.profile-card-header img {
+    width: 64px;
+}
+
+.profile-card__name {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+.profile-card__localization {
+    font-size: .9rem;
+    color: var(--third-color);
+}
+
+.btn-follow-user {
+    width: 150px;
+    height: 25px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    font-weight: 700;
+    font-family: var(--primary-font);
+    background-color: var(--primary-color);
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn-follow-user:hover {
+    background-color: var(--white);
+}
+
+.profile-card-mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.profile-card-mid h3 {
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.favorite-films-list {
+    display: flex;
+    gap: 6px;
+}
+
+.favorite-films-list li {
+    width: 75px;
+}
+
+.favorite-films-list li img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--light-gray);
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.favorite-films-list li img:hover {
+    transform: scale(105%);
+}
+
+.profile-card-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-card-footer__list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 364px;
+}
+
+.profile-card-footer__list li {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 121px;
+}
+
+.profile-card-footer__list li p {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: .7rem;
+}
